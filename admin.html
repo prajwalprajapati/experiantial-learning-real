@@ -1,0 +1,48 @@
+
+<html>
+<head>
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Library Admin</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="trending.html">Trending</a>
+        <a href="admin.html">Admin</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Add New Book</h2>
+
+    <form>
+        <label>Title:</label>
+        <input type="text" name="title" required>
+
+        <label>Author:</label>
+        <input type="text" name="author" required>
+
+        <label>ISBN:</label>
+        <input type="text" name="isbn" required>
+
+        <label>Availability:</label>
+        <select name="availability">
+            <option value="available">Available</option>
+            <option value="issued">Issued</option>
+	    <option value="not available">not available</option>
+        </select>
+
+        <button type="submit">Add Book</button>
+    </form>
+</section>
+
+<footer>
+    <p>city Library</p>
+</footer>
+
+</body>
+</html>

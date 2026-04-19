@@ -1,0 +1,77 @@
+<html>
+<head>
+    <title>Your Books</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>My Library</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="trending.html">Trending</a>
+        <a href="admin.html">Admin</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Library Catalog</h2>
+<input type="text" id="searchBox" placeholder="Search by title or author..." onkeyup="searchBooks()">
+
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>ISBN</th>
+                <th>Availability</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr class="available">
+                <td>Atomic Habits</td>
+                <td>James Clear</td>
+                <td>9780735211292</td>
+                <td>Available</td>
+            </tr>
+
+            <tr class="issued">
+                <td>1984</td>
+                <td>George Orwell</td>
+                <td>9780451524935</td>
+                <td>not available
+</td>
+            </tr>
+
+            <tr class="available">
+                <td>The Alchemist</td>
+                <td>Paulo Coelho</td>
+                <td>9780061122415</td>
+                <td>Available</td>
+            </tr>
+
+            <tr class="issued">
+                <td>Harry Potter</td>
+                <td>J.K. Rowling</td>
+                <td>9780747532743</td>
+                <td>Issued</td>
+            </tr>
+
+            <tr class="available">
+                <td>Rich Dad Poor Dad</td>
+                <td>Robert Kiyosaki</td>
+                <td>9781612680194</td>
+                <td>Available</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<footer>
+    <p> city Library</p>
+</footer>
+
+</body>
+</html>
