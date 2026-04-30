@@ -43,6 +43,22 @@
 <footer>
     <p>city Library</p>
 </footer>
+	<!--JAVA SCript-->
 
+	<script>
+function addBook(event) {
+    event.preventDefault();
+
+    let title = document.querySelector('input[name="title"]').value;
+    let author = document.querySelector('input[name="author"]').value;
+    let isbn = document.querySelector('input[name="isbn"]').value;
+    let availability = document.querySelector('select[name="availability"]').value;
+
+    alert("Book Added Successfully!\n\nTitle: " + title +
+          "\nAuthor: " + author +
+          "\nISBN: " + isbn +
+          "\nStatus: " + availability);
+}
+</script>
 </body>
 </html>
