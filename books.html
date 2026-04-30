@@ -1,3 +1,4 @@
+
 <html>
 <head>
     <title>Your Books</title>
@@ -17,9 +18,8 @@
 
 <section>
     <h2>Library Catalog</h2>
-<input type="text" id="searchBox" placeholder="Search by title or author..." onkeyup="searchBooks()">
-
-    <table>
+    <input type="text" id="searchBox" placeholder="Search by title or author..." onkeyup="searchBooks()">
+    <table id="bookTable">
         <thead>
             <tr>
                 <th>Title</th>
@@ -41,8 +41,7 @@
                 <td>1984</td>
                 <td>George Orwell</td>
                 <td>9780451524935</td>
-                <td>not available
-</td>
+                <td>Issued</td>
             </tr>
 
             <tr class="available">
@@ -70,11 +69,11 @@
 </section>
 
 <footer>
-    <p> city Library</p>
+    <p>city Library</p>
 </footer>
-    <!--JAVA SCRIPT-->
 
-        <script>
+<!--JAVA Script for search engine -->
+<script>
 function searchBooks() {
     let input = document.getElementById("searchBox").value.toLowerCase();
     let rows = document.querySelectorAll("#bookTable tbody tr");
