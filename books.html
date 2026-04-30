@@ -72,6 +72,25 @@
 <footer>
     <p> city Library</p>
 </footer>
+    <!--JAVA SCRIPT-->
+
+        <script>
+function searchBooks() {
+    let input = document.getElementById("searchBox").value.toLowerCase();
+    let rows = document.querySelectorAll("#bookTable tbody tr");
+
+    rows.forEach(row => {
+        let title = row.cells[0].textContent.toLowerCase();
+        let author = row.cells[1].textContent.toLowerCase();
+
+        if (title.includes(input) || author.includes(input)) {
+            row.style.display = "";
+        } else {
+            row.style.display = "none";
+        }
+    });
+}
+</script>
 
 </body>
 </html>
